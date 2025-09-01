@@ -40,30 +40,7 @@ public class LangChain4jClient {
         Bot bot = AiServices.builder(Bot.class).chatLanguageModel(model).toolProvider(toolProvider).build();
         
         try {
-            String response = bot.chat("Calculate the sum of 24.5 and 17.3 using the calculator service");
-            System.out.println("response1:" + response);
-            
-            response = bot.chat("使用计算器进行 32.5 减去 21.3");
-            System.out.println("response4:" + response);
-            
-            response = bot.chat("使用计算器进行 32.5 乘以 21.3");
-            System.out.println("response5:" + response);
-            
-            response = bot.chat("使用计算器进行 32.5 除以 21.3");
-            System.out.println("response6:" + response);
-            
-            response = bot.chat("使用计算器进行 3 的 5 次方");
-            System.out.println("response7:" + response);
-            
-            // 计算绝对值
-            response = bot.chat("使用计算器进行 -32.5 的绝对值");
-            System.out.println("response8:" + response);
-            
-            response = bot.chat("What's the square root of 144?");
-            System.out.println("response2:" + response);
-            
-            response = bot.chat("Show me the help for the calculator service");
-            System.out.println("response3:" + response);
+            bot.chat("帮我创建属于 Huawei AX3 型号的硬件资产。其状态和子状态分别为库存和可用。");
         } finally {
             mcpClient.close();
         }

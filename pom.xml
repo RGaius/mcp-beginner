@@ -97,6 +97,18 @@
 			<artifactId>langchain4j-community-dashscope</artifactId>
 		</dependency>
 		
+		<dependency>
+			<groupId>com.github.victools</groupId>
+			<artifactId>jsonschema-generator</artifactId>
+			<version>4.37.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.victools</groupId>
+			<artifactId>jsonschema-module-jackson</artifactId>
+			<version>4.37.0</version>
+		</dependency>
+	
+	
 	</dependencies>
 	
 	<!-- Build configuration -->
